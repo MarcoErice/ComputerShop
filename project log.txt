@@ -1,0 +1,3 @@
+2017-02-09
+	Rajib started to work with the database at restdb.io
+	Marco submitted at repositorie in Github called ComputerShop and connected it to Visual Studio
