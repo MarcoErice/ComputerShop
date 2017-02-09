@@ -1,24 +1,18 @@
 
-/*
-    _________________________________________________
-   |                                                 |
-   |    Welcome to Christians CSS file!              |
-   |    Please add your CSS stuff in this file..     |
-   |                                                 |
-   |                                                 |
-   |   ______________________________________________|
-   |  /
-   | /
-   |/
+#container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 600px
+}
 
-  \o/
-   | 
-  / \
+#container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#picture {
+    float:left;
+    width:200px
+}
 
-  */
-
-
-
-.xyz{color:blueviolet}
-.addedClass{background: lightpink}
-.addedClass a:link, .addedClass a:visited{ color: #fff!important}
+#quotation {
+    width:200px
+}
