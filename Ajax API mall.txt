@@ -1,0 +1,37 @@
+
+$(function(){
+	// execute the AJAX request
+	$.ajax({
+		async: true,
+		url: 'https://api.dryg.net/dagar/v2.1/2017?callback',
+		method: "GET",
+		headers: {"Accept": "application/json;odata=verbose"}
+	})
+
+	// methods
+	.done(successFunction)
+	.fail(failFunction)
+
+	// start success function
+	function successFunction(data){
+
+		// deklarera att moment.locale ska köras för svenskt språk (moment-with-locales ska också laddas)
+		var nowMoment = moment(); // Hämta datum & tid just nu med moment för att matcha dagens datum mot dagens datum från API. 
+		var dayNr = moment(nowMoment).format('DD')-1; //  Ger t ex 26 januari
+
+		// API objekt med variabler för återanvändning (skapa variabler för det du behöver här nedan)
+		var dateDay = moment(data.dagar[dayNr].datum).format('DD MMMM YYYY'); // Utan moment formattering: var myVar = data.dagar[dayNr].datum; - Moment formatering används nu
+		var weekDay = data.dagar[dayNr].veckodag;
+
+		// Outputs med villkor (bygg din HTML och fyll med värden från API här nedan)
+		$("#dayDateDay").html(weekDay  + 'en den ' + dateDay );
+	
+	}
+    // end success function
+
+	// fail function
+	function failFunction(request, textStatus, errorThrown) {
+		console.log('Funkar ej.. ');
+	}
+
+});
