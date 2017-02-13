@@ -18,7 +18,8 @@
 }*/
 
 .media {
-    background-color: black
+    background-color: black;
+    width: 50%
 }
 .media-heading, p {
     color: white
