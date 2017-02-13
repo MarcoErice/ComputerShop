@@ -16,3 +16,10 @@
 #quotation {
     width:200px
 }*/
+
+.media {
+    background-color: black
+}
+.media-heading, p {
+    color: white
+}
