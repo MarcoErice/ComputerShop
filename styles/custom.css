@@ -24,3 +24,35 @@
 .media-heading, p {
     color: white
 }
+
+/* CSS FORE FORM*/
+.thank-you{
+    font-size: 16px;
+    padding: 20px;  
+  }
+
+  #project-form{
+    padding: 10px;
+  }
+  #project-form input{
+    width: 300px;
+  }
+  label{
+    display: block;
+  }
+  .form-control{
+    width: auto;
+  }
+  .help-block{
+    margin-left:10px;
+  }
+  .progress{
+    width: 300px;
+    height:10px;
+    border-radius:0px;
+    margin-top: 2px;
+  }
+
+  #btn-submit{
+      width: 300px;
+  }
