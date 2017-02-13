@@ -18,9 +18,9 @@ function successFunction(data) {
 
 
     $(data).each(function () {
-        item.push('<ul id="' + 'listUL' + '">' + '<li id="' + 'listLI' + '">' +
+        item.push('<img src="https://webshop-ba3d.restdb.io/media/' + this.photo + '" class="img-thumbnail">' + '<ul id="' + 'listUL' + '">' + '<li id="' + 'listLI' + '">' +
         this.firstName + ' ' + this.lastName + '</br>' + this.email + '</br>' +
-         this.Citat + '<img src="https://webshop-ba3d.restdb.io/media/' + this.photo  + '" class="img-thumbnail">' + '</li>' + '</ul>');
+         this.Citat +  '</li>' + '</ul>');
     });
     item.push("</div>");
     $("#mom").html(item.join(''));
