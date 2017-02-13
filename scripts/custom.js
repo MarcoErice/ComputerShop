@@ -98,7 +98,7 @@ $(function () {
         $(this).data("uploadedfiles", []);
     });
 
-    var apikey = "58a216907647b93a16fa3abc"; // // TODO: INSERT YOUR CORS API KEY HERE
+    var apikey = "58a04ba554dd018673264282"; // // TODO: INSERT YOUR CORS API KEY HERE
 
     if (!apikey) alert("Please insert a CORS API key");
 
