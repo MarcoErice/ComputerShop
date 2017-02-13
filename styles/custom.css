@@ -25,7 +25,7 @@
     color: white
 }
 
-/* CSS FORE FORM*/
+/* CSS FOR FORM*/
 .thank-you{
     font-size: 16px;
     padding: 20px;  
@@ -56,3 +56,17 @@
   #btn-submit{
       width: 300px;
   }
+
+  /* CSS for test*/
+  #listUL{
+list-style-type: none;
+ position: relative;
+ margin: 10px;
+}
+
+li#listLI {
+    box-shadow: 2px 3px 6px;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 221px;
+}
