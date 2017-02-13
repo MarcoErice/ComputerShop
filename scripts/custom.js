@@ -45,7 +45,8 @@ $(document).ready(function () {
         });
         random_items = shuffle(item);
         var result = random_items.join('');
-        $("#mom").html(result)
+        $("#mom").html(result);
+        $(".media-left").html(result);
 
     }
 
