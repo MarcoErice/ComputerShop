@@ -41,7 +41,7 @@ $(document).ready(function () {
 // F O R M\\
 
 
-(function () {
+$(function () {
     // put your own error messages and/or message translation logic here
     var errorMessages = {
         "REQUIRED": "This field is required",
