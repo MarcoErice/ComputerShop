@@ -19,50 +19,16 @@ $(document).ready(function () {
 
         for (var i = 0; i < data.length; i++) {
             var randNum = Math.floor(Math.random() * data.length);
-            $("#photo").html('<img src="https://webshop-ba3d.restdb.io/media/' + (data[randNum].photo) + '">');
-            // $("#photo").html(data[randNum].'<img src="https://webshop-ba3d.restdb.io/media/' + photo + '" class="img-thumbnail pull-left">');
+            $("#photo").html('<img src="https://webshop-ba3d.restdb.io/media/' + (data[randNum].photo) + '" class="img-thumbnail pull-left">');
             $("#firstName").html(data[randNum].firstName);
             $("#lastName").text(data[randNum].lastName);
             $("#email").text(data[randNum].email);
-            $(".media-body").text(data[randNum].Citat);
+            $("#media-heading").text(data[randNum].Citat);
 
         }
 
     }
 
-    {
-        var item = [];
-
-        function shuffle(array) {
-            var currentIndex = array.length, temporaryValue, randomIndex;
-
-            // While there remain elements to shuffle...
-            while (0 !== currentIndex) {
-
-                // Pick a remaining element......
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex -= 1;
-
-                // And swap it with the current element.
-                temporaryValue = array[currentIndex];
-                array[currentIndex] = array[randomIndex];
-                array[randomIndex] = temporaryValue;
-            }
-
-            return array;
-        }
-
-
-        $(data).each(function () {
-            item.push('<div>' + '<img src="https://webshop-ba3d.restdb.io/media/' + this.photo + '" class="img-thumbnail pull-left">' + this.firstName + ' ' + this.lastName + '</br>' + this.email + '</br>' +
-                this.Citat + '</div>');
-        });
-        random_items = shuffle(item);
-        var result = random_items.join('');
-        $("#mom").html(result);
-        $(".media-left").html(result);
-
-    }
 
     function failFunction(request, textStatus, errorThrown) {
         console.log('not work..');
