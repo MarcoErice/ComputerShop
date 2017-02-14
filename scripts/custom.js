@@ -39,9 +39,8 @@ $(document).ready(function () {
 
 
         $(data).each(function () {
-            item.push('<ul id="' + 'listUL' + '">' + '<li id="' + 'listLI' + '">' +
-                this.firstName + ' ' + this.lastName + '</br>' + this.email + '</br>' +
-                this.Citat + '<img src="https://webshop-ba3d.restdb.io/media/' + this.photo + '" class="img-thumbnail">' + '</li>' + '</ul>');
+            item.push('<div>' + '<img src="https://webshop-ba3d.restdb.io/media/' + this.photo + '" class="img-thumbnail pull-left">' + this.firstName + ' ' + this.lastName + '</br>' + this.email + '</br>' +
+                this.Citat + '</div>');
         });
         random_items = shuffle(item);
         var result = random_items.join('');
