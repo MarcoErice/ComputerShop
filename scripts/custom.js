@@ -22,6 +22,7 @@ $(document).ready(function () {
             $("#photo").html('<img src="https://webshop-ba3d.restdb.io/media/' + (data[randNum].photo) + '" class="img-thumbnail pull-left">');
             $("#firstName").html(data[randNum].firstName);
             $("#lastName").text(data[randNum].lastName);
+            $("#bio").text(data[randNum].bio);
             $("#email").text(data[randNum].email);
             $("#media-heading").text(data[randNum].Citat);
 
