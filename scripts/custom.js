@@ -16,6 +16,21 @@ $(document).ready(function () {
 	.fail(failFunction)
 
     function successFunction(data) {
+
+        for (var i = 0; i < data.length; i++) {
+            var randNum = Math.floor(Math.random() * data.length);
+            $("#photo").html('<img src="https://webshop-ba3d.restdb.io/media/' + (data[randNum].photo) + '">');
+            // $("#photo").html(data[randNum].'<img src="https://webshop-ba3d.restdb.io/media/' + photo + '" class="img-thumbnail pull-left">');
+            $("#firstName").html(data[randNum].firstName);
+            $("#lastName").text(data[randNum].lastName);
+            $("#email").text(data[randNum].email);
+            $(".media-body").text(data[randNum].Citat);
+
+        }
+
+    }
+
+    {
         var item = [];
 
         function shuffle(array) {
