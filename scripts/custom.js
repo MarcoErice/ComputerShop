@@ -24,6 +24,8 @@ $(document).ready(function () {
             $("#lastName").text(data[randNum].lastName);
             $("#email").text(data[randNum].email);
             $("#media-heading").text(data[randNum].Citat);
+            $("#edit").text(data[randNum]._id);
+
 
         }
 
@@ -230,3 +232,27 @@ $(function () {
         return false;
     });
 });
+
+
+
+// Delete Function
+	$("button").click (function() {
+
+	    var contactID = $("#edit").text();
+	    $("#helaBoxen").fadeOut();
+	    var settings = {
+	        "async": true,
+	        "crossDomain": true,
+	        "url": "https://webshop-ba3d.restdb.io/rest/project/" + contactID,
+	        "method": "DELETE",
+	        "headers": {
+	            "content-type": "application/json",
+	            "x-apikey": "58a04ba554dd018673264282",
+	            "cache-control": "no-cache"
+	        }
+	    }
+	$.ajax(settings).done(function (response) {
+	    console.log(response);
+	});
+	
+	});

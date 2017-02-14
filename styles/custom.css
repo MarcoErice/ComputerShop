@@ -57,3 +57,6 @@
       width: 300px;
   }
 
+  #edit {
+      display: none;
+  }
