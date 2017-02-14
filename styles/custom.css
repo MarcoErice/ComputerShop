@@ -57,3 +57,22 @@
       width: 300px;
   }
 
+  #helaBoxen{
+      background-color:black;
+      color:white;
+      border-radius:10px;
+      box-shadow: 10px 10px 5px #888888;
+        }
+
+  #photo {
+      margin-top:10px;
+  }
+
+  #email{
+      margin-bottom:10px;
+  }
+
+ #media-heading{
+     margin-top:10px;
+     font-size:30px;
+ }
