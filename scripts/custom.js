@@ -73,7 +73,7 @@ $(function () {
     $("#project-form input[data-type=file], #project-form input[data-type=image]").on("change", function () {
         $(this).data("uploadedfiles", []);
     });
-    var apikey = "58a2f6147647b93a16fa3ae6"; // // TODO: INSERT YOUR CORS API KEY HERE
+    var apikey = "58a04ba554dd018673264282"; // // TODO: INSERT YOUR CORS API KEY HERE
     if (!apikey) alert("Please insert a CORS API key");
     var ajaxSettings = {
         "async": true,
@@ -81,7 +81,7 @@ $(function () {
         "url": "https://webshop-ba3d.restdb.io/rest/project",
         "method": "POST",
         "headers": {
-            "x-apikey": "58a2f6147647b93a16fa3ae6",
+            "x-apikey": apikey,
             "content-type": "application/json"
         },
         "processData": false
@@ -237,23 +237,23 @@ $(function () {
 
 
 // Delete Function
-	$("button").click (function() {
+$("#delete").click(function() {
 
-	    var contactID = $("#edit").text();
-	    $("#helaBoxen").fadeOut();
-	    var settings = {
-	        "async": true,
-	        "crossDomain": true,
-	        "url": "https://webshop-ba3d.restdb.io/rest/project/" + contactID,
-	        "method": "DELETE",
-	        "headers": {
-	            "content-type": "application/json",
-	            "x-apikey": "58a04ba554dd018673264282",
-	            "cache-control": "no-cache"
-	        }
-	    }
-	$.ajax(settings).done(function (response) {
-	    console.log(response);
-	});
-	
-	});
+    var contactID = $("#edit").text();
+    $("#helaBoxen").fadeOut();
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://webshop-ba3d.restdb.io/rest/project/" + contactID,
+        "method": "DELETE",
+        "headers": {
+            "content-type": "application/json",
+            "x-apikey": "58a2f6147647b93a16fa3ae6",
+            "cache-control": "no-cache"
+        }
+    }
+    $.ajax(settings).done(function (response) {
+        console.log(contactID);
+    });
+
+});
