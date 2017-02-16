@@ -1,11 +1,16 @@
 /* CSS FOR BOX*/
-#helaBoxen{
-      background-color:black;
-      color:white;
-      border-radius:10px;
-      box-shadow: 10px 10px 5px #888888;
-      font-family: "Times New Roman", Times, serif;
-        }
+#helaBoxen {
+    background-color: rgba(0, 0, 0, 0.62);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 6px 7px 8px #888888;
+    font-family: Courier, Monaco, monospace;
+}
+
+
+#details{
+margin-top: 20px;
+ }
 
 #photo {
       margin-top:10px;
