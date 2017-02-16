@@ -1,3 +1,29 @@
+/* CSS FOR BOX*/
+#helaBoxen{
+      background-color:black;
+      color:white;
+      border-radius:10px;
+      box-shadow: 10px 10px 5px #888888;
+      font-family: "Times New Roman", Times, serif;
+        }
+
+#photo {
+      margin-top:10px;
+  }
+
+#email{
+      margin-bottom:10px;
+  }
+
+#media-heading {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#edit{
+     display:none;
+ }
+
 /* CSS FOR FORM*/
 .thank-you{
     font-size: 16px;
@@ -29,29 +55,3 @@
   #btn-submit{
       width: 300px;
   }
-
-  /* CSS FOR BOX*/
-  #helaBoxen{
-      background-color:black;
-      color:white;
-      border-radius:10px;
-      box-shadow: 10px 10px 5px #888888;
-      font-family: "Times New Roman", Times, serif;
-        }
-
-  #photo {
-      margin-top:10px;
-  }
-
-  #email{
-      margin-bottom:10px;
-  }
-
- #media-heading{
-     margin-top:10px;
-     font-size:30px;
- }
-
- #edit{
-     display:none;
- }
