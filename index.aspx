@@ -17,81 +17,78 @@
             <hr>
             <div id="helaBoxen" class="container">
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <div id="photo" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="col-md-3">
-                            <div id="media-heading"></div>
-                        </div>
-                    </div>
-
-
+        <div class="row">
+            <div class="col-md-6">
+                <div id="photo" class="img-responsive">
                 </div>
-                <div class="col-md-3">
-                    <span id="firstName"></span>
-                    <span id="lastName"></span>
-                    <div id="bio"></div>
-                    <div id="email"></div>
-                    <div id="edit"> </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div id="media-heading" class="text-left "></div>
                 </div>
             </div>
 
+        </div>
+        
+        <div id="details" class="col-md-6">
+            <span id="firstName"></span>
+            <span id="lastName"></span>
+            <div id="bio"></div>
+            <div id="email"></div>
+            <div id="edit"> </div>
+        </div>
+    </div>
 
-            <button id="delete">Delete me</button>
+    <br />
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger" id="delete">Delete me</button>
+        </div>
 
 
-            <!--Form-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3> To add new members please use this form</h3>
-                        <form role="form" id="project-form">
-                            <div class="form-group">
-                                <label>Firstname: </label>
-                                <input class="form-control" name="firstName" data-type="text" type="text" required>
+<!--Form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-8">
+                <h3> To add new members please use this form</h3>
+                <form role="form" id="project-form">
+                    <div class="form-group">
+                        <label>First Name: </label><input class="form-control" name="firstName" data-type="text" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name: </label><input class="form-control" name="lastName" data-type="text" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Class Name: </label><input class="form-control" name="className" data-type="text" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email: </label><input class="form-control" name="email" data-type="email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Bio: </label><input class="form-control" name="bio" data-type="text" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Photo: </label>
+                        <input class="form-control" name="photo" data-type="image" accept="image/*" type="file" multiple>
+                        <div class="progress hidden">
+                            <div id="photo_progress" class="progress-bar" role="progressbar" aria-valuenow="0"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:0">
+                                <span class="sr-only">0%</span>
                             </div>
-                            <div class="form-group">
-                                <label>Lastname: </label>
-                                <input class="form-control" name="lastName" data-type="text" type="text" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Classname: </label>
-                                <input class="form-control" name="className" data-type="text" type="text" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Email: </label>
-                                <input class="form-control" name="email" data-type="email" type="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Bio: </label><input class="form-control" name="bio" data-type="text" type="text" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Photo: </label>
-                                <input class="form-control" name="photo" data-type="image" accept="image/*" type="file" multiple>
-                                <div class="progress hidden">
-                                    <div id="photo_progress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                                        style="width:0">
-                                        <span class="sr-only">0%</span>
-                                </div>
-                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Citat: </label><input class="form-control" name="Citat" data-type="text" type="text" required>
+                    </div><div id="fg-errors" class="form-group">
                     </div>
-                    <div id="fg-errors" class="form-group">
-                    </div>
-                    <button class="btn btn-primary btn-lg" id="btn-submit" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Submitting...">Submit</button>
-                    </form>
-                </div>
+                    <button class="btn btn-primary btn-lg" id="btn-submit" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Submitting...">Upload New</button>
+                </form>
             </div>
-            </div>
-            </div>
-            </div>
-            <hr>
+        </div>
+    </div>
+<hr>
+    
+
 
 
             <!--end code-->
