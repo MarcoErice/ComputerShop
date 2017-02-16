@@ -1,30 +1,3 @@
-
-/*#container {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 600px
-}
-
-#container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-#picture {
-    float:left;
-    width:200px
-}
-
-#quotation {
-    width:200px
-}*/
-
-.media {
-    background-color: black;
-    width: 50%
-}
-.media-heading, p {
-    color: white
-}
-
 /* CSS FOR FORM*/
 .thank-you{
     font-size: 16px;
@@ -57,6 +30,7 @@
       width: 300px;
   }
 
+  /* CSS FOR BOX*/
   #helaBoxen{
       background-color:black;
       color:white;
